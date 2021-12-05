@@ -4,7 +4,7 @@
 ; Constants
 
 BulletsMax = 10
-Bullet1stCharacter = 64
+Bullet1stCharacter = 191
 
 ;===============================================================================
 ; Variables

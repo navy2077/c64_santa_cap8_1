@@ -129,7 +129,7 @@
 00129  087F             ; CONSTANTS
 00130  087F             
 00131  087F             BULLETSMAX = 10
-00132  087F             BULLET1STCHARACTER = 64
+00132  087F             BULLET1STCHARACTER = 191
 00133  087F             
 00134  087F             ;===============================================================================
 00135  087F             ; VARIABLES
@@ -584,7 +584,7 @@
 00584  0A80                        
 00585  0A80  18                    CLC
 00586  0A81  AD E9 09              LDA PLAYERXOFFSET
-00587  0A84  69 40                 ADC #BULLET1STCHARACTER
+00587  0A84  69 BF                 ADC #BULLET1STCHARACTER
 00588  0A86  9D A5 08              STA BULLETSXOFFSET,X
 00589  0A89             
 00590  0A89  AD EA 09              LDA PLAYERYCHAR
@@ -2336,7 +2336,7 @@ BGCOL3  = $D024
 Black  = $0000
 Blue  = $0006
 Brown  = $0009
-Bullet1stCharacter  = $0040
+Bullet1stCharacter  = $00BF
 BulletsMax  = $000A
 CIAPRA  = $DC00
 CIAPRB  = $DC01
